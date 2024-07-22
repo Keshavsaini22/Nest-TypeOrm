@@ -12,7 +12,7 @@ export const dataSourceOptions = (
     database: 'TodoType',
     host: 'localhost',
     port: 5432,
-    entities: ["dist/src/domaain/**/*.entity{.ts,.js}"],
+    entities: ["dist/src/domain/**/*.entity.js"],
     synchronize: false,
     migrationsTableName: 'custom_migration_table',
     migrations: ['dist/src/infracture/database/migrations/*{.ts,.js}'],
