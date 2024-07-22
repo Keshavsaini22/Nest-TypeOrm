@@ -15,7 +15,7 @@ export const dataSourceOptions = (
     entities: ["dist/src/domain/**/*.entity.js"],
     synchronize: false,
     migrationsTableName: 'custom_migration_table',
-    migrations: ['dist/src/infracture/database/migrations/*{.ts,.js}'],
+    migrations: ['dist/src/infrastructure/database/migrations/*{.ts,.js}'],
 })
 
 export const dataSource = new DataSource(dataSourceOptions(new ConfigService()),)
